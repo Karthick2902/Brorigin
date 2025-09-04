@@ -84,7 +84,7 @@ const Home = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto animate-fade-in">
-            BroArgent brings you 100% organic, farm-fresh honey directly from trusted beekeepers. 
+            Brorigin brings you 100% organic, farm-fresh honey directly from trusted beekeepers. 
             Experience pure sweetness in every drop.
           </p>
           
@@ -110,7 +110,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-playfair text-4xl font-bold text-honey-dark mb-4">
-              Why Choose BroArgent?
+              Why Choose Brorigin?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We're committed to bringing you the finest organic honey with uncompromising quality and sustainability.
@@ -177,7 +177,7 @@ const Home = () => {
             </div>
             <blockquote className="text-xl text-gray-700 mb-6 italic">
               "The best honey I've ever tasted! The quality is exceptional and you can really taste the difference. 
-              BroArgent has become our family's go-to for all things sweet and natural."
+              Brorigin has become our family's go-to for all things sweet and natural."
             </blockquote>
             <cite className="font-semibold text-honey-dark">
               Sarah Johnson, Verified Customer

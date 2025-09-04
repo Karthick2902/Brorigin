@@ -13,12 +13,12 @@ const Footer = () => {
                 <span className="text-white font-bold text-xl">B</span>
               </div>
               <span className="font-playfair text-3xl font-bold">
-                BroArgent
+                Brorigin
               </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Pure, natural, and organic honey sourced directly from trusted beekeepers. 
-              Experience nature's sweetest gift with every jar of BroArgent honey.
+              Experience nature's sweetest gift with every jar of Brorigin honey.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -66,7 +66,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-gray-400" />
-                <span className="text-gray-300">info@broargent.com</span>
+                <span className="text-gray-300">info@brorigin.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-gray-400" />
@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 BroArgent. All rights reserved. Made with 🍯 for honey lovers.
+            © 2024 Brorigin. All rights reserved. Made with 🍯 for honey lovers.
           </p>
         </div>
       </div>

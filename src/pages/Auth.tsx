@@ -36,7 +36,7 @@ const Auth = () => {
               <span className="text-white font-bold text-xl">B</span>
             </div>
             <span className="font-playfair text-3xl font-bold text-honey-dark">
-              BroArgent
+              Brorigin
             </span>
           </Link>
           <p className="text-muted-foreground mt-2">Welcome to the sweetest community</p>

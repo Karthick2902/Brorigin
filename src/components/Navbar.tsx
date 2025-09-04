@@ -26,7 +26,7 @@ const Navbar = () => {
               <span className="text-white font-bold text-lg">B</span>
             </div>
             <span className="font-playfair text-2xl font-bold text-honey-dark">
-              BroArgent
+              Brorigin
             </span>
           </Link>
 

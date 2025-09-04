@@ -49,7 +49,7 @@ const About = () => {
               Our Sweet Story
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              BroArgent was born from a simple belief: that nature's sweetest gift should be shared 
+              Brorigin was born from a simple belief: that nature's sweetest gift should be shared 
               in its purest form, connecting people to the timeless tradition of beekeeping.
             </p>
           </div>
@@ -73,7 +73,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  BroArgent is dedicated to bringing you 100% organic, farm-fresh honey directly 
+                  Brorigin is dedicated to bringing you 100% organic, farm-fresh honey directly 
                   from trusted beekeepers. Our journey began with a passion for authentic, 
                   unprocessed honey and a commitment to supporting sustainable beekeeping practices.
                 </p>
@@ -165,7 +165,7 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-honey-dark">Email Us</h3>
-                    <p className="text-muted-foreground">info@broargent.com</p>
+                    <p className="text-muted-foreground">info@brorigin.com</p>
                   </div>
                 </div>
 
