@@ -54,7 +54,7 @@ const ProductCard = ({ id, name, price, image, size, description, isNew }: Produ
             {size}
           </Badge>
           <span className="font-playfair text-2xl font-bold text-honey-dark">
-            ${price}
+            ₹{price.toLocaleString('en-IN')}
           </span>
         </div>
 

@@ -13,7 +13,7 @@ const Home = () => {
     {
       id: '1',
       name: 'Pure Organic Honey',
-      price: 24.99,
+      price: 1999,
       image: honeyJarMain,
       size: '500ml',
       description: 'Premium organic honey with rich floral notes, perfect for daily use and natural sweetening.',
@@ -22,7 +22,7 @@ const Home = () => {
     {
       id: '2',
       name: 'Family Pack Honey',
-      price: 45.99,
+      price: 3699,
       image: honeyVariants,
       size: '1L',
       description: 'Large family-sized jar of pure organic honey, ideal for households and baking enthusiasts.',
@@ -30,7 +30,7 @@ const Home = () => {
     {
       id: '3',
       name: 'Travel Size Honey',
-      price: 12.99,
+      price: 999,
       image: honeyJarMain,
       size: '250ml',
       description: 'Convenient travel-sized jar, perfect for on-the-go sweetening and gift giving.',

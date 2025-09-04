@@ -50,17 +50,23 @@ const Navbar = () => {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="sm" className="relative hover:text-primary">
-              <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                0
-              </span>
+              <Link to="/cart">
+                <ShoppingCart className="w-5 h-5" />
+                <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                  0
+                </span>
+              </Link>
             </Button>
             <Button variant="ghost" size="sm" className="hover:text-primary">
-              <User className="w-5 h-5" />
+              <Link to="/profile">
+                <User className="w-5 h-5" />
+              </Link>
             </Button>
-            <Button className="btn-honey">
-              Login
-            </Button>
+            <Link to="/signin">
+              <Button className="btn-honey">
+                Login
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -100,17 +106,23 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="pt-3 border-t border-border space-y-2">
-              <Button variant="ghost" className="w-full justify-start" size="sm">
-                <ShoppingCart className="w-4 h-4 mr-2" />
-                Cart (0)
-              </Button>
-              <Button variant="ghost" className="w-full justify-start" size="sm">
-                <User className="w-4 h-4 mr-2" />
-                Account
-              </Button>
-              <Button className="btn-honey w-full">
-                Login
-              </Button>
+              <Link to="/cart">
+                <Button variant="ghost" className="w-full justify-start" size="sm">
+                  <ShoppingCart className="w-4 h-4 mr-2" />
+                  Cart (0)
+                </Button>
+              </Link>
+              <Link to="/profile">
+                <Button variant="ghost" className="w-full justify-start" size="sm">
+                  <User className="w-4 h-4 mr-2" />
+                  Account
+                </Button>
+              </Link>
+              <Link to="/signin">
+                <Button className="btn-honey w-full">
+                  Login
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Products = () => {
     {
       id: '1',
       name: 'Pure Organic Honey',
-      price: 24.99,
+      price: 1999,
       image: honeyJarMain,
       size: '500ml',
       description: 'Premium organic honey with rich floral notes, perfect for daily use and natural sweetening.',
@@ -27,7 +27,7 @@ const Products = () => {
     {
       id: '2',
       name: 'Family Pack Honey',
-      price: 45.99,
+      price: 3699,
       image: honeyVariants,
       size: '1L',
       description: 'Large family-sized jar of pure organic honey, ideal for households and baking enthusiasts.',
@@ -36,7 +36,7 @@ const Products = () => {
     {
       id: '3',
       name: 'Travel Size Honey',
-      price: 12.99,
+      price: 999,
       image: honeyJarMain,
       size: '250ml',
       description: 'Convenient travel-sized jar, perfect for on-the-go sweetening and gift giving.',
@@ -45,7 +45,7 @@ const Products = () => {
     {
       id: '4',
       name: 'Wildflower Honey',
-      price: 27.99,
+      price: 2299,
       image: honeyJarMain,
       size: '500ml',
       description: 'Rich and complex wildflower honey with diverse floral notes from mountain meadows.',
@@ -55,7 +55,7 @@ const Products = () => {
     {
       id: '5',
       name: 'Acacia Honey',
-      price: 29.99,
+      price: 2499,
       image: honeyVariants,
       size: '500ml',
       description: 'Light and delicate acacia honey with subtle sweetness and crystal-clear appearance.',
@@ -64,7 +64,7 @@ const Products = () => {
     {
       id: '6',
       name: 'Manuka Honey',
-      price: 59.99,
+      price: 4999,
       image: honeyJarMain,
       size: '250ml',
       description: 'Premium Manuka honey with natural antibacterial properties and rich, earthy flavor.',
