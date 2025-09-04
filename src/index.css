@@ -1,42 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* BroArgent Honey Brand Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brand Colors - Honey Theme */
+    --background: 45 100% 98%;
+    --foreground: 25 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 50% 96%;
+    --card-foreground: 25 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 100% 98%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Honey Gold Primary */
+    --primary: 45 95% 55%;
+    --primary-foreground: 45 5% 10%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm Cream Secondary */
+    --secondary: 45 30% 90%;
+    --secondary-foreground: 25 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Light Honey Muted */
+    --muted: 45 40% 92%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Golden Accent */
+    --accent: 42 100% 65%;
+    --accent-foreground: 25 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 100% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 25% 85%;
+    --input: 45 25% 88%;
+    --ring: 45 95% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Brand Specific Colors */
+    --honey-gold: 45 95% 55%;
+    --honey-amber: 42 90% 50%;
+    --honey-cream: 45 50% 94%;
+    --honey-dark: 30 35% 25%;
+    --premium-shadow: 45 25% 15%;
+
+    /* Gradients */
+    --gradient-honey: linear-gradient(135deg, hsl(45 95% 65%) 0%, hsl(42 90% 55%) 100%);
+    --gradient-cream: linear-gradient(180deg, hsl(45 50% 98%) 0%, hsl(45 30% 92%) 100%);
+    --gradient-golden: linear-gradient(45deg, hsl(45 95% 55%) 0%, hsl(42 100% 70%) 50%, hsl(38 85% 60%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(45 25% 15% / 0.08);
+    --shadow-premium: 0 8px 40px hsl(45 25% 15% / 0.12);
+    --shadow-glow: 0 0 30px hsl(45 95% 55% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +126,102 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  /* Premium Button Variants */
+  .btn-honey {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground px-8 py-3 rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:shadow-[var(--shadow-glow)];
+  }
+
+  .btn-outline-honey {
+    @apply border-2 border-primary text-primary bg-transparent px-8 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-lg;
+  }
+
+  .btn-premium {
+    @apply bg-gradient-to-br from-honey-gold to-honey-amber text-white px-10 py-4 rounded-2xl font-semibold transition-all duration-500 shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-glow)] hover:scale-[1.02] hover:-translate-y-1;
+  }
+
+  /* Card Styles */
+  .card-premium {
+    @apply bg-card rounded-3xl shadow-[var(--shadow-soft)] border border-border/50 transition-all duration-300 hover:shadow-[var(--shadow-premium)] hover:-translate-y-2;
+  }
+
+  .card-product {
+    @apply bg-gradient-to-b from-card to-honey-cream rounded-2xl shadow-[var(--shadow-soft)] border border-border/30 transition-all duration-500 hover:shadow-[var(--shadow-premium)] hover:scale-[1.02] hover:-translate-y-3 group;
+  }
+
+  /* Gradient Backgrounds */
+  .bg-honey-gradient {
+    background: var(--gradient-honey);
+  }
+
+  .bg-cream-gradient {
+    background: var(--gradient-cream);
+  }
+
+  .bg-golden-gradient {
+    background: var(--gradient-golden);
+  }
+
+  /* Animations */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px hsl(45 95% 55% / 0.4);
+  }
+  to {
+    box-shadow: 0 0 40px hsl(45 95% 55% / 0.8);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
